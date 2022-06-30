@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "297762146223",
+    "project_id": "firestoretskilz",
+    "storage_bucket": "firestoretskilz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297762146223:android:8da968c2ea99a37cfa915a",
+        "android_client_info": {
+          "package_name": "com.example.android.firestoretskillz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297762146223-be1bats4gg9gikdju4muc2cmhlbc8crb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.firestoretskillz",
+            "certificate_hash": "d32f161cd09c7fbc5e16c15872fef52bbd053882"
+          }
+        },
+        {
+          "client_id": "297762146223-4r8q8d8bfuiebukc016rbgi2af77oru9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTio4tX5scnMjCzIJAFIok1ajft-TSqKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297762146223-4r8q8d8bfuiebukc016rbgi2af77oru9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
