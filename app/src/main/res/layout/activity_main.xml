@@ -40,6 +40,12 @@
         android:text="Add Multiple"
         android:id="@+id/buttonAddMultiple"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DeletePerticularData"
+        android:onClick="DeletePerticularData"/>
+
 
     <TextView
         android:layout_width="match_parent"
