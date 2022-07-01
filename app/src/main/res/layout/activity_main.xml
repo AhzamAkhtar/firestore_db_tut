@@ -40,7 +40,7 @@
         android:text="Add Multiple"
         android:id="@+id/buttonAddMultiple"/>
 
-    <Button
+     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DeletePerticularData"
@@ -59,7 +59,22 @@
         android:textSize="25dp"
         android:id="@+id/textViewName"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditId"
+        android:hint="Enter ID...."
+        android:background="@color/purple_200"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter The Name"
+        android:id="@+id/EditName"
+        android:background="@color/purple_200"/>
+
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/recyclerView"/>

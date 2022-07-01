@@ -1,7 +1,8 @@
 package com.example.android.firestoretskillz
 
-data class Students (val id:String="",
-                 val name:String?="",
+data class Students (
+    var id:String="",
+    var name:String?="",
 
 
-)
+    )

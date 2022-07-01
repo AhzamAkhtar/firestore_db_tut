@@ -14,7 +14,7 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-class PostAdapter(options: FirestoreRecyclerOptions<Students>,val listner:IPostAdapter) : FirestoreRecyclerAdapter<Students, PostAdapter.PostViewholder>(
+class PostAdapter(options: FirestoreRecyclerOptions<Students>,val listner:IPostAdapter,val listner1:IPostAdapter1) : FirestoreRecyclerAdapter<Students, PostAdapter.PostViewholder>(
     options
 ){
 
@@ -22,12 +22,16 @@ class PostAdapter(options: FirestoreRecyclerOptions<Students>,val listner:IPostA
         val text_id:TextView = itemView.findViewById(R.id.ID)
         val text_name:TextView = itemView.findViewById(R.id.NAME)
         val del_button:ImageView = itemView.findViewById(R.id.deleteButton)
+        val edit_button:ImageView = itemView.findViewById(R.id.EditButton)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewholder {
         val viewholder= PostViewholder(LayoutInflater.from(parent.context).inflate(R.layout.newlayout,parent,false))
         viewholder.del_button.setOnClickListener{
             listner.onLikeClicked(snapshots.getSnapshot(viewholder.adapterPosition).id)
+        }
+        viewholder.edit_button.setOnClickListener{
+            listner1.onEditClicked(snapshots.getSnapshot(viewholder.adapterPosition).id)
         }
         return viewholder
     }
@@ -42,4 +46,8 @@ class PostAdapter(options: FirestoreRecyclerOptions<Students>,val listner:IPostA
 }
 interface IPostAdapter{
     fun onLikeClicked(postId:String)
+
+}
+interface IPostAdapter1{
+    fun onEditClicked(postId: String)
 }
